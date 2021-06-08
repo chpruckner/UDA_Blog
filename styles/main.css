@@ -1,0 +1,20 @@
+@import url(header.css);
+@import url(home.css);
+@import url(blog.css);
+@import url(footer.css);
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Raleway', sans-serif;
+  font-size: 100%;
+}
+
+a {
+  color: #ff5d5d;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
