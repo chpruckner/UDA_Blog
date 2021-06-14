@@ -1,0 +1,155 @@
+.post {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto 1fr auto auto;
+  grid-template-areas: 
+    "header"
+    "main"
+    "sidebar"
+    "footer";
+  min-height: 100%;
+}
+
+.post main {
+  margin-bottom: 50px;
+}
+
+.sidebar {
+  grid-area: sidebar;
+  padding: 15px;
+  background-color: #EAB464;
+}
+
+.author-img {
+  border-radius: 100%;
+  width: 200px;
+  height: 200px;
+  /* margin: 0 auto; */
+  display: block;
+}
+
+.author-name {
+  margin: 20px 0 5px;
+}
+
+.author-title {
+  margin: 0 0 5px;
+  font-weight: 300;
+}
+
+.author-com {
+  margin: 0 0 10px;
+  font-style: italic;
+}
+
+.social-share {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 0;
+}
+
+.social-share img {
+  width: 25px;
+  margin: 0 5px;
+}
+
+.blog-teaser .inner-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: repeat(auto-fill, 150px);
+  gap: 10px;
+}
+
+.teaser-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.teaser {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 150px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-weight: 700;
+  color: #fff;
+  text-shadow: 1px 1px 1px #131200;
+  border-radius: 5px;
+}
+
+.teaser-carina {
+  background-image: url(../img/blanket.jpg);
+}
+
+.teaser-babs {
+  background-image: url(../img/cardigan.jpg);
+}
+
+.teaser-michi {
+  background-image: url(../img/beanie.jpg);
+}
+
+
+@media screen and (min-width: 768px) {
+  .post main {
+    padding: 0 30px;
+  }
+
+  .sidebar {
+    padding: 30px;
+  }
+
+  .sidebar .inner-container .wrapper {
+    display: flex;
+    align-items: center;
+    max-width: 500px;
+    margin-right: auto;
+  }
+
+  .author-img {
+    margin-right: 50px;
+  }
+
+  .author-name {
+    margin-top: 0;
+  }
+
+  .blog-teaser .inner-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .post {
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: 
+      "header header header header header header"
+      "main main main main sidebar sidebar"
+      "footer footer footer footer footer footer";
+  }
+
+  .post main {
+    margin: 0 0 50px auto;
+  }
+
+  .sidebar .inner-container .wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .author-text {
+    margin-top: 70px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .post main {
+    padding: 0 50px;
+  }
+}

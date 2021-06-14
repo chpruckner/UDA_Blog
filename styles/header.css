@@ -3,6 +3,7 @@ header {
   z-index: 100;
   top: 0;
   background-color: #6c9a8b;
+  grid-area: header;
 }
 
 .container {
@@ -19,7 +20,7 @@ header {
   max-width: 80px;
 }
 
-.inner-container {
+header .inner-container {
   display: flex;
   flex-direction: column;
   justify-content: space-between;

@@ -3,7 +3,12 @@
 @import url(blog.css);
 @import url(footer.css);
 
+html {
+  height: 100%;
+}
+
 body {
+  height: 100%;
   padding: 0;
   margin: 0;
   font-family: 'Raleway', sans-serif;
@@ -24,6 +29,7 @@ main {
   max-width: 1400px;
   padding: 0 15px;
   margin: auto;
+  grid-area: main;
 }
 
 p {
@@ -41,6 +47,55 @@ p i {
 img {
   max-width: 100%;
   height: auto;
+}
+
+ul {
+  list-style: none;
+  line-height: 2;
+}
+
+ul li::before {
+  content: "";
+  height: 1em;
+  width: 1em;
+  display: inline-block;
+  background-image: url(../img/button.svg);
+  background-size: contain;
+  margin: 0 10px 3px 0;
+  vertical-align: middle;
+}
+
+h1,
+h2,
+h3 {
+  margin: 1em 0 0.7em;
+}
+
+h1 {
+  font-size: 35px;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+blockquote p {
+  font-size: 30px;
+  font-family: "Molle", cursive;
+  margin: 1em 0 0.5em;
+}
+
+blockquote span {
+  font-size: 14px;
+  font-weight: 200;
+  font-style: italic;
 }
 
 .button {
@@ -62,5 +117,19 @@ img {
 @media screen and (min-width: 768px) {
   main {
     padding: 0 20px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  h1 {
+    font-size: 45px;
+  }
+
+  h2 {
+    font-size: 38px;
+  }
+
+  h3 {
+    font-size: 30px;
   }
 }
