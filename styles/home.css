@@ -1,0 +1,51 @@
+.intro {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.intro h1 {
+  font-family: 'Molle', cursive;
+  font-weight: 400;
+  font-size: 40px;
+}
+
+.preview {
+  margin: 50px 0;
+}
+
+.card {
+  border: 1px solid rgba(19, 18, 0, 0.5);
+  border-radius: 5px;
+}
+
+.card-img-container {
+  position: relative;
+  margin: 0;
+}
+
+.card-img-caption {
+  position: absolute;
+  bottom: 3px;
+  padding: 5px 8px;
+  background-color: rgba(19, 18, 0, 0.3);
+  font-weight: 200;
+  font-size: 14px;
+  line-height: 1;
+  font-style: italic;
+  color: #fff;
+}
+
+.card-title {
+  margin: 7px 10px 15px;
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.card-teaser {
+  padding: 0 10px;
+  font-size: 15px;
+}
+
+.card-button {
+  margin: 15px;
+}

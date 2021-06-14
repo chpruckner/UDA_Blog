@@ -4,10 +4,11 @@
 @import url(footer.css);
 
 body {
-  margin: 0;
   padding: 0;
+  margin: 0;
   font-family: 'Raleway', sans-serif;
   font-size: 100%;
+  color: #131200;
 }
 
 a {
@@ -17,4 +18,41 @@ a {
 
 a:hover {
   text-decoration: underline;
+}
+
+main {
+  padding: 0 15px;
+}
+
+p {
+  line-height: 1.5;
+}
+
+p b {
+  font-weight: 700;
+}
+
+p i {
+  font-weight: 600;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.button {
+  display: inline-block;
+  padding: 5px 10px;
+  border: 2px solid #ff5d5d;
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.button:hover {
+  background-color: #ff5d5d;
+  color: #fff;
+  text-decoration: none;
 }
