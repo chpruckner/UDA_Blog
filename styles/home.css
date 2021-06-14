@@ -1,10 +1,16 @@
+.hero {
+  display: none;
+  background: url(../img/knitpattern2.jpg) repeat-x;
+}
+
 .intro {
-  margin-top: 50px;
+  max-width: 700px;
+  margin: 50px auto 0;
+  font-size: 18px;
   text-align: center;
 }
 
 .intro h1 {
-  font-family: 'Molle', cursive;
   font-weight: 400;
   font-size: 40px;
 }
@@ -14,8 +20,13 @@
 }
 
 .card {
-  border: 1px solid rgba(19, 18, 0, 0.5);
+  overflow: hidden;
+  border: 1px solid #6c9a8b;
   border-radius: 5px;
+}
+
+.card + .card {
+  margin-top: 15px;
 }
 
 .card-img-container {
@@ -35,10 +46,25 @@
   color: #fff;
 }
 
+.card-text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-height: 39%;
+}
+
+.card-text {
+  flex: 1 0;
+}
+
 .card-title {
   margin: 7px 10px 15px;
   font-weight: 600;
   font-size: 24px;
+}
+
+.card-title a {
+  color: #131200;
 }
 
 .card-teaser {
@@ -48,4 +74,27 @@
 
 .card-button {
   margin: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .preview {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2%;
+  }
+
+  .card + .card {
+    margin-top: 0;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .hero {
+    display: block;
+    height: 400px;
+  }
+  
+  .preview {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
